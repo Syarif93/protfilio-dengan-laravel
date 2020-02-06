@@ -22,9 +22,14 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <form action="/logout" method="post">
+                        <a class="nav-link logout-btn" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
-                            <button type="submit" class="nav-link home-link">Logout</button>
                         </form>
                     @else
                         <a href="{{ route('login') }}" class="nav-link log-link">Login</a>

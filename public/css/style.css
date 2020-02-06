@@ -103,6 +103,13 @@ header {
     opacity: .8;
 }
 
+.logout-btn {
+    padding: .8rem 1.8rem;
+    background: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    border-radius: 2rem;
+    font-size: 1.3rem;
+}
+
 .text-secondary {
     color: var(--primary-color);
 }
