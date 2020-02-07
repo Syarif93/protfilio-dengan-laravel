@@ -10,7 +10,6 @@
 
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/loginStyle.css') }}">
     <link rel="stylesheet" href="{{ asset('fontawesome-free/css/all.css') }}">
 </head>
 
@@ -51,17 +50,17 @@
                 <div class="potrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item current">
+                <li class="nav-item {{ '/' == request()->path() ? 'current' : '' }}">
                     <a href="{{url('/')}}" class="nav-link">Beranda</a>
                 </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">Tentang Saya</a>
+                <li class="nav-item {{ 'about' == request()->path() ? 'current' : '' }}">
+                    <a href="{{url('/about')}}" class="nav-link">Tentang Saya</a>
                 </li>
-                <li class="nav-item">
-                    <a href="projects.html" class="nav-link">Proyek</a>
+                <li class="nav-item {{ 'projects' == request()->path() ? 'current' : '' }}">
+                    <a href="{{url('/projects')}}" class="nav-link">Proyek</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Kontak</a>
+                <li class="nav-item {{ 'contact' == request()->path() ? 'current' : '' }}">
+                    <a href="{{url('/contact')}}" class="nav-link">Kontak</a>
                 </li>
             </ul>
         </nav>

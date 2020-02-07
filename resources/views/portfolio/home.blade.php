@@ -1,6 +1,6 @@
 @extends('layouts/main')
 
-@section('title', 'Home')
+@section('title', 'Beranda')
 @section('main')
     <main id="home">
         <h1 class="lg-heading">

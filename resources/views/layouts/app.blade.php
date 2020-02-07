@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ asset('fontawesome-free/css/all.css') }}">
 
     <!-- Styles -->
-    <link href="{{ asset('css/loginStyle.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/authStyle.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">

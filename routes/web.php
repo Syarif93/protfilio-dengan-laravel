@@ -19,5 +19,8 @@
 Auth::routes();
 
 Route::get('/', 'PortfolioController@index')->name('home');
+Route::get('/about', 'PortfolioController@about');
+Route::get('/projects', 'PortfolioController@projects');
+Route::get('/contact', 'PortfolioController@contact');
 
 // Route::get('/home', 'HomeController@index');
