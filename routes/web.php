@@ -20,4 +20,4 @@ Auth::routes();
 
 Route::get('/', 'PortfolioController@index')->name('home');
 
-Route::get('/home', 'HomeController@index');
+// Route::get('/home', 'HomeController@index');

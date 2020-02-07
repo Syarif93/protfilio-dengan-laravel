@@ -110,6 +110,10 @@ header {
     font-size: 1.3rem;
 }
 
+.logout-btn:hover {
+    opacity: .8;
+}
+
 .text-secondary {
     color: var(--primary-color);
 }
